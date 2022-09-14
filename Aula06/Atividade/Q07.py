@@ -8,5 +8,5 @@ pessoa = nome, idade, email
 
 lista = [pessoa]
 
-for perssoa in lista:
-    print(f"Nome:{name}, idade:{idade}, email:{email}. Inscrição bem sucedida.")
+for pessoa in lista:
+    print(f"Nome:{nome}, idade:{idade}, email:{email}. Inscrição bem sucedida.")
