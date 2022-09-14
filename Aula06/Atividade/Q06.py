@@ -28,4 +28,4 @@ nova_lista_celebridades = [
 # Exiba um novo convite para cada pessoa que continua presente em sua lista.
 
 for nome in nova_lista_celebridades:
-    print(f"{name},É com muita alegria que venho lhe convidar para uma festa na minha residência no Hotel California,420.Domingo,04/02, às 22 horas)
+    print(f"{nome},Venho lhe convidar para uma festa no Hotel California,420.Domingo,04/02, às 22 horas")
