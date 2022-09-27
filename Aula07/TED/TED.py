@@ -1,7 +1,8 @@
 '''Problema 1 : As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem 
 compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o
- custo total da compra.
+ custo total da compra.'''
  
+   
 print('[ ! ]PROMOÇÃO: A partir de 12 maças,o valor de cada uma será R$ 1,00. Valor normal R$ 1,30 [ ! ]')
 maçãs = int(input('Digite o número de maçãs que deseja comprar (0 pra sair do programa): '))
 
@@ -21,6 +22,15 @@ else: # Calculando com o valor normal
     total = preço_normal * maçãs
     print(f'Você comprou {maçãs} e não faz parte da promoção.Valor total: R$ {total}')    
 
-'''Problema 2 : Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela
- poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu).
-'''
+    '''Problema 2 : Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga
+     se ela poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu).
+    '''
+ano_atual = int(input("Digite o ano atual: "))
+ano_nascimento = int(input("Digite o seu ano de nascimento: "))
+
+idade = ano_atual - ano_nascimento
+
+if idade >= 16:
+    print("Você poderá votar este ano!")
+else:
+    print("Você não poderá votar este ano!")
