@@ -1,12 +1,29 @@
-# Faça um cadastro de usuários com nome, idade e email, utilizando apenas o que você aprendeu até agora.
+cadastros = []
 
-nome = input("Digite seu nome: ")
-idade = int(input("Digite sua idade: "))
-email = input("Digite seu email: ")
+botao = 1000
+while botao != 0:
+    print("Digite 1 para cadastrar um novo usuário")
+    print("Digite 2 para imprimir todos os usuários")
+    print("Digite 0 pra sair")
+    botao = int(input("Digite a opção desejada:"))
 
-pessoa = nome, idade, email
+    if botao == 1:
+        # Entrada dos Dados
+        nome = input("Digite o nome: ")
+        idade = int(input("Digite a idade: "))
+        email = input("Digite o e-mail: ")
 
-lista = [pessoa]
+        # Folha de Cadastro
+        dados = [nome, idade, email]
+        # Guardando a folha na pasta
+        cadastros.append(dados)
 
-for pessoa in lista:
-    print(f"Nome:{nome}, idade:{idade}, email:{email}. Inscrição bem sucedida.")
+    elif botao == 2:
+        for p in cadastros:
+            print(p)
+
+    elif botao == 0:
+        print("Obrigado por acessar este software!")
+
+    else:
+        print("Digite um número válido!")
