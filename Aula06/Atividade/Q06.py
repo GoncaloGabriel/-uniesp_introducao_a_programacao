@@ -1,31 +1,23 @@
-# Crie uma lista de convidados para um jantar em sua casa, com pelo menos 5 celebridades.
+convidados = [
+    "Coringa", "Thor", "Naruto", "Loki"
+]
 
-lista_celebridades = [
-    "Ronaldinho Gaúcho",
-    "Jack Chan",
-    "Orochi",
-    "Lionel Messi",
-    "Tupac Sharkur"]
+for nome in convidados:
+    mensagem = f"Bora pra balada,{nome}!"
+    print(mensagem)
 
-# Envie um convite para cada uma dessas pessoas. Com a mesma mensagem e nome personalizado.
+    # Quem não poderá ir
+    print("Jesus: Infelizmente não \
+        posso estar no mesmo ambiente que o Loki!")
 
-for nome in lista_celebridades:
-    print(f"{nome}, É com muita alegria que venho lhe convidar para uma festa na minha residência no Hotel California,420.Domingo,04/02, às 22 horas")
+    print("Coringa: Infelizmente não \
+        posso estar no mesmo ambiente que o Naruto!")
 
-# Sabendo que uma dessas pessoas não poderá ir ao seu jantar, você deverá enviar novos convites. Imprima o nome das pessoas que não poderão comparecer.
-
-print("Jack Chan e Orochi não poderão ir ao jantar")
-
-# Modifique sua lista, substitua os desistentes por novos convidados.
-
-nova_lista_celebridades = [
-    "Ronaldinho Gaúcho",
-    "Eminem",
-    "Bruce Lee",
-    "Lionel Messi",
-    "Tupac Sharkur"]
-
-# Exiba um novo convite para cada pessoa que continua presente em sua lista.
-
-for nome in nova_lista_celebridades:
-    print(f"{nome},Venho lhe convidar para uma festa no Hotel California,420.Domingo,04/02, às 22 horas")
+     # Modifique sua lista,substituta os
+     # desistentes por novos convidados.
+    convidados[2] = "Madre Tereza"
+    convidados[0] = "Pinguim"
+    
+for nome in convidados:
+    mensagem = f"Bora pra balada,{nome.upper()}!"
+    print(mensagem)
