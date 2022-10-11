@@ -3,7 +3,7 @@
 # Use seus nomes para serem as chaves de cada número favorito. 
 # Ao final, exiba o nome de cada pessoa e seu número favorito.
 
-nprefer = {"Josi": 11, "Leide": 12, "Eduardo": 13, "Flavio": 25, "Monica": 26}
+nprefer = {"João": 15, "José": 16, "José": 19, "Thiago": 27, "Renata": 30}
 
-for k,v in nprefer.items():
-    print(f'O número preferido de {k} é {v}.')
+for t,g in nprefer.items():
+    print(f'O número preferido de {t} é {g}.')
