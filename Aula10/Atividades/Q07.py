@@ -6,9 +6,9 @@ from random import randint
 v1 = []
 v2 = []
 
-for n in range(100):
-    v1.append(randint(0,20))
-    v2.append(randint(0,20))
+for n in range(10):
+    v1.append(randint(0,40))
+    v2.append(randint(0,40))
 
 print(v1)
 print(v2)
